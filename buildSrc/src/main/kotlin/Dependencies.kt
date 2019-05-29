@@ -4,12 +4,14 @@ object Plugins {
     const val androidLibrary = "com.android.library"
     const val kotlinAndroid = "kotlin-android"
     const val gradleVersions = "com.github.ben-manes.versions"
+    const val androidMaven = "com.github.dcendents.android-maven"
 }
 
 object Versions {
     const val kotlin = "1.3.31"
     const val androidGradlePlugin = "3.4.1"
     const val gradleVersions = "0.21.0"
+    const val androidMaven = "2.1"
 
     const val minSdk = 21
     const val targetSdk = 28
