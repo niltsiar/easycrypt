@@ -1,6 +1,6 @@
 @file:JvmName("EasyCryptUtils")
 
-package com.github.niltsiar.easycrypt
+package dev.niltsiar.easycrypt
 
 import android.os.Build
 import android.util.Base64

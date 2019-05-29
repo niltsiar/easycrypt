@@ -1,6 +1,6 @@
 @file:JvmName("KeyStorageUtils")
 
-package com.github.niltsiar.easycrypt
+package dev.niltsiar.easycrypt
 
 import java.security.Key
 import java.security.KeyStore

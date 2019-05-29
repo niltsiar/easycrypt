@@ -1,6 +1,6 @@
 @file:JvmName("KeyStorageAndroidKeyStoreUtils")
 
-package com.github.niltsiar.easycrypt
+package dev.niltsiar.easycrypt
 
 import android.annotation.TargetApi
 import android.os.Build
