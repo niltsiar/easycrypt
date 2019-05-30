@@ -9,6 +9,12 @@ import javax.crypto.spec.IvParameterSpec
 
 class EasyCrypt(private val keyStorage: KeyStorage = getKeyStorage()) {
 
+    companion object {
+
+        @JvmStatic
+        val instance: EasyCrypt by lazy { EasyCrypt() }
+    }
+
     fun encrypt(value: String): String {
         val cipher = Cipher.getInstance(keyStorage.encryptionTransformation)
         cipher.init(Cipher.ENCRYPT_MODE, keyStorage.getKey())
