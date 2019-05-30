@@ -41,7 +41,13 @@ class KeyStorageAndroidKeystore : KeyStorage {
         keyGenerator.generateKey()
     }
 
-    override fun getKey(): Key = getKeyStore().getKey(MASTER_KEY_ALIAS, null)
+    override fun getKey(): Key {
+        val key = getKeyStore().getKey(MASTER_KEY_ALIAS, null)
+
+        checkNotNull(key) { "StoredKey should not be null" }
+
+        return key
+    }
 }
 
 @TargetApi(Build.VERSION_CODES.M)
