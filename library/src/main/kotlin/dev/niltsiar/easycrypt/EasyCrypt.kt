@@ -38,7 +38,7 @@ internal fun getKeyStorage(): KeyStorage {
     return if (isMarshmallowOrGreater) {
         KeyStorageAndroidKeystore()
     } else {
-        TODO()
+        KeyStorageSharedPreferences(EasyCryptInitProvider.applicationContext)
     }
 }
 
